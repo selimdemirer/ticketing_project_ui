@@ -185,7 +185,7 @@
                         <div class="row">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div class="page-header" id="top">
-                                    <h2 class="pageheader-title">User Create</h2>
+                                    <h2 class="pageheader-title">Project Create</h2>
                                 </div>
                             </div>
                         </div>
@@ -198,65 +198,43 @@
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <form>
                                     <div class="row">
-                                        <div class="form-group col-3">
-                                            <label for="firstname" class="col-form-label">First Name</label>
-                                            <input id="firstname" type="text" class="form-control"
-                                                   placeholder="first name">
-                                        </div>
-                                        <div class="form-group col-3">
-                                            <label for="lastname" class="col-form-label">Last Name</label>
-                                            <input id="lastname" type="text" class="form-control"
-                                                   placeholder="last name">
+                                        <div class="form-group col-6">
+                                            <label for="projectname" class="col-form-label">Project Name</label>
+                                            <input id="projectname" type="text" class="form-control"
+                                                   placeholder="project name">
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="form-group col-3">
-                                            <label for="email" class="col-form-label">Email Address</label>
-                                            <input id="email" type="text" class="form-control"
-                                                   placeholder="email address">
-                                        </div>
-                                        <div class="form-group col-3">
-                                            <label for="phone" class="col-form-label">Phone Number</label>
-                                            <input id="phone" type="text" class="form-control"
-                                                   placeholder="phone number">
+                                        <div class="form-group col-6">
+                                            <label for="projectcode" class="col-form-label">Project Code</label>
+                                            <input id="projectcode" type="text" class="form-control"
+                                                   placeholder="project code">
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="form-group col-3">
-                                            <label for="password" class="col-form-label">Password</label>
-                                            <input id="password" type="password" class="form-control"
-                                                   placeholder="password">
-                                        </div>
-                                        <div class="form-group col-3">
-                                            <label for="password" class="col-form-label">Password</label>
-                                            <input id="confirm your password" type="password" class="form-control"
-                                                   placeholder="confirm your password">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="form-group col-3">
-                                            <label>Gender</label>
-                                            <br>
-                                            <label class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" name="gender" checked=""
-                                                       class="custom-control-input" value="male">
-                                                <span class="custom-control-label">Male</span>
-                                            </label>
-                                            <label class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" name="gender" checked=""
-                                                       class="custom-control-input" value="female">
-                                                <span class="custom-control-label">Female</span>
-                                            </label>
-                                        </div>
-                                        <div class="form-group col-3">
-                                            <label>Choose a Role</label>
-                                            <select name="roleId" id="roleDropdown" class="custom-select"
+                                        <div class="form-group col-6">
+                                            <label>Assigned Manager</label>
+                                            <select name="managerDrop" id="managerDrop" class="custom-select"
                                                     required="required">
                                                 <option value="none" selected disabled>Select</option>
-                                                <option value="admin">Admin</option>
-                                                <option value="manager">Manager</option>
-                                                <option value="employee">Employee</option>
+                                                <option value="ozzy">Ozzy</option>
                                             </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-3">
+                                            <label>Project Start Date</label>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                        <div class="form-group col-3">
+                                            <label>Project End Date</label>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6">
+                                            <label>Project Detail</label>
+                                            <textarea placeholder="write your project details" class="form-control"></textarea>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -273,27 +251,27 @@
                         <!-- ============================================================== -->
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                             <div class="page-header" id="bottom">
-                                <h2 class="pageheader-title">User List</h2>
+                                <h2 class="pageheader-title">Project List</h2>
                             </div>
 
                             <table class="table table-striped">
                                 <thead>
                                 <tr>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Email(username)</th>
-                                    <th scope="col">Gender</th>
-                                    <th scope="col">Phone</th>
-                                    <th scope="col">Role</th>
+                                    <th scope="col">Project Code</th>
+                                    <th scope="col">Project Name</th>
+                                    <th scope="col">Start-End Date</th>
+                                    <th scope="col">Manager</th>
+                                    <th scope="col">Status</th>
                                     <th scope="col">Action</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>Craig Jark</td>
-                                    <td>craig@cydeo.com</td>
-                                    <td>Male</td>
-                                    <td>2921234322</td>
-                                    <td>Employee</td>
+                                    <td>PRJ001</td>
+                                    <td>Human Resource CRM</td>
+                                    <td>03/07/2022-03/08/2022</td>
+                                    <td>Delissa Nore</td>
+                                    <td>Open</td>
                                     <td>
                                         <a href="#">
                                             <button class="btn btn-warning btn-sm">Update</button>
@@ -301,39 +279,46 @@
                                         <a href="#">
                                             <button class="btn btn-danger btn-sm">Delete</button>
                                         </a>
+                                        <a href="#">
+                                            <button class="btn btn-info btn-sm">Complete</button>
+                                        </a>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Dellisa Nore</th>
-                                    <td>dellisa@cydeo.com</td>
-                                    <td>Female</td>
-                                    <td>(301)1234567</td>
-                                    <td>Manager</td>
-                                    <td><a href="#" class="btn btn-warning  btn-sm">Update</a> <a href="#" class="btn btn-danger btn-sm">Delete</a></td>
+                                    <td>PRJ002</td>
+                                    <td>Infra Upgrade</td>
+                                    <td>03/08/2022-03/17/2022</td>
+                                    <td>Mike Smith</td>
+                                    <td>In Progress</td>
+                                    <td>
+                                        <a href="#">
+                                            <button class="btn btn-warning btn-sm">Update</button>
+                                        </a>
+                                        <a href="#">
+                                            <button class="btn btn-danger btn-sm">Delete</button>
+                                        </a>
+                                        <a href="#">
+                                            <button class="btn btn-info btn-sm">Complete</button>
+                                        </a>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>John Casy</th>
-                                    <td>john@cydeo.com</td>
-                                    <td>Male</td>
-                                    <td>(301)1234567</td>
-                                    <td>Admin</td>
-                                    <td><a href="#" class="btn btn-warning  btn-sm">Update</a> <a href="#" class="btn btn-danger btn-sm">Delete</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Mike SMith</th>
-                                    <td>mike@cydeo.com</td>
-                                    <td>Male</td>
-                                    <td>(301)1234567</td>
-                                    <td>Manager</td>
-                                    <td><a href="#" class="btn btn-warning  btn-sm">Update</a> <a href="#" class="btn btn-danger btn-sm">Delete</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Shaun Hayna</th>
-                                    <td>shaun@cydeo.com</td>
-                                    <td>Male</td>
-                                    <td>(301)1234567</td>
-                                    <td>Employee</td>
-                                    <td><a href="#" class="btn btn-warning  btn-sm">Update</a> <a href="#" class="btn btn-danger btn-sm">Delete</a></td>
+                                    <td>PRJ003</td>
+                                    <td>Shipment Tracking System</td>
+                                    <td>03/10/2022-03/24/2022</td>
+                                    <td>Mike Smith</td>
+                                    <td>Completed</td>
+                                    <td>
+                                        <a href="#">
+                                            <button class="btn btn-warning btn-sm">Update</button>
+                                        </a>
+                                        <a href="#">
+                                            <button class="btn btn-danger btn-sm">Delete</button>
+                                        </a>
+                                        <a href="#">
+                                            <button class="btn btn-info btn-sm">Complete</button>
+                                        </a>
+                                    </td>
                                 </tr>
                                 </tbody>
                             </table>
