@@ -238,17 +238,20 @@
                                             <label>Gender</label>
                                             <br>
                                             <label class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" name="gender" checked="" class="custom-control-input" value="male">
+                                                <input type="radio" name="gender" checked=""
+                                                       class="custom-control-input" value="male">
                                                 <span class="custom-control-label">Male</span>
                                             </label>
                                             <label class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" name="gender" checked="" class="custom-control-input" value="female">
+                                                <input type="radio" name="gender" checked=""
+                                                       class="custom-control-input" value="female">
                                                 <span class="custom-control-label">Female</span>
                                             </label>
                                         </div>
                                         <div class="form-group col-3">
                                             <label>Choose a Role</label>
-                                            <select name="roleId" id="roleDropdown" class="custom-select" required="required">
+                                            <select name="roleId" id="roleDropdown" class="custom-select"
+                                                    required="required">
                                                 <option value="none" selected disabled>Select</option>
                                                 <option value="admin">Admin</option>
                                                 <option value="manager">Manager</option>
@@ -263,9 +266,49 @@
                                     </div>
                                 </form>
                             </div>
-                            <!-- ============================================================== -->
-                            <!-- end form  -->
                         </div>
+                        <!-- end form  -->
+                        <!-- ============================================================== -->
+                        <!-- table -->
+                        <!-- ============================================================== -->
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="page-header" id="bottom">
+                                <h2 class="pageheader-title">User List</h2>
+                            </div>
+
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Email(username)</th>
+                                    <th scope="col">Gender</th>
+                                    <th scope="col">Phone</th>
+                                    <th scope="col">Role</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Craig Jark</td>
+                                    <td>craig@cydeo.com</td>
+                                    <td>Male</td>
+                                    <td>3135546531213</td>
+                                    <td>Employee</td>
+                                    <td>
+                                        <a href="#">
+                                            <button class="btn btn-warning btn-sm">Update</button>
+                                        </a>
+                                        <a href="#">
+                                        <button class="btn btn-danger btn-sm">Delete</button>
+                                        </a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <!-- end table  -->
+                        <!-- ============================================================== -->
                     </div>
                 </div>
             </div>
