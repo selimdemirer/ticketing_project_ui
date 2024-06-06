@@ -1,6 +1,10 @@
-# CYDEO Ticketing Project Initial Template
+Ticketing Project (Project Management Tool) - UI
 
-Project Definition
+• In this project, I created required .html pages by using and manipulating some ready templates.
+
+• After completing the necessary editing procedures, I completed the process of redirecting the pages to each other.  
+
+General Project Definition
 
 • A ticketing project is an application that organizes management processes.
 
